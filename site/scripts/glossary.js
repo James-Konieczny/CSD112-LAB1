@@ -22,7 +22,7 @@ const glossary = [
 ];
 
 // Capture the <main> element using its id
-const main = document.getElementById("creating-aglossary");
+const main = document.getElementById("creating-a-glossary");
 
 // Create and add a level 1 heading
 const heading = document.createElement("h1");

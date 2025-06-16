@@ -27,7 +27,51 @@
             <div id="survey">
                 <h1>Survey</h1>
                 <form>
-                    
+                        <p>
+                            <label for="name">
+                                <span>What is your name? </span>
+                                <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="text" id="name" name="name_field" required />
+                        </p>
+                        <p>
+                            <label for="email">
+                                <span>What is your email? </span>
+                                <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="text" id="email" name="email_field" required />
+                        </p>
+                        <p>
+                            <label for="whole_number">
+                                <span>Which whole number is best? </span>
+                            </label>
+                            <input type="number" min="0" step="1" id="whole_number" name="best_whole_number" />
+                        </p>
+                        <p>
+                            <label for="date">
+                                <span>Which day is best? </span>
+                            </label>
+                            <input type="date" id="date" name="best_day" />
+                        </p>
+                        <p>
+                            <label for="bear">
+                                <span>Which bear is best? </span>
+                                <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input list="bear" name="best_bear" required />
+                            <datalist id="bear">
+                                <option value="" selected>&nbsp;</option>
+                                <option>Black</option>
+                                <option>Brown</option>
+                                <option>Care</option>
+                                <option>Panda</option>
+                                <option>Polar</option>
+                                <option>Teddy</option>
+                            </datalist>
+                        </p>
+                    <fieldset>
+                        
+                    </fieldset>
                 </form>
             </div>
         </main>

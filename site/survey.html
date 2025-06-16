@@ -26,7 +26,8 @@
         <main>
             <div id="survey">
                 <h1>Survey</h1>
-                <form>
+                <form action="https://formspree.io/f/xvgrrwyd" method="post">
+                    <section>
                         <p>
                             <label for="name">
                                 <span>What is your name? </span>
@@ -70,8 +71,31 @@
                             </datalist>
                         </p>
                     <fieldset>
-                        
+                        <legend>Do you like radio buttons?</legend>
+                        <ul>
+                            <li>
+                                <label for="yes"><input type="radio" id="yes" name="enjoys_radio_buttons" value="yes">Yes</label>
+                            </li>
+                            <li>
+                                <label for="no"><input type="radio" id="no" name="enjoys_radio_buttons" value="no">No</label>
+                            </li>
+                            <li>
+                                <label for="none"><input type="radio" id="none" name="enjoys_radio_buttons" value="?" checked>None of your business</label>
+                            </li>
+                        </ul>
+                    </section>
                     </fieldset>
+                        <p>
+                            <label for="life?">
+                                <span>What is the meaning of life? </span>
+                            </label>
+                            <textarea id="life?" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+                        </p>
+                    <section>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </section>
                 </form>
             </div>
         </main>
